@@ -2,25 +2,22 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Muhammad Abdul Rafey Farooqi # the website title (if blank, full name will be used instead)
 first_name: Muhammad Abdul Rafey
 middle_name:
 last_name: Farooqi
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  The best way to reach me is through my email mfarooqi.bese21seecs@seecs.edu.pk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Academic Page for Muhammad Abdul Rafey Farooqi
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: Muhammad Abdul Rafey Farooqi, Abdul Rafey, Farooqi, Muhammad, abdurafeyf, mfarooqi
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 💭 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://abdurafeyf.github.io # the base hostname & protocol for your site
 baseurl: / # the subpath of your site, e.g. /blog/. Leave blank for root
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
 
@@ -87,10 +84,10 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Blog # blog_name will be displayed in your blog page
-blog_nav_title: blog
+blog_name: Writings # blog_name will be displayed in your blog page
+blog_nav_title: Writings
 blog_description: no posts yet... 😕
-permalink: /blog/:year/:title/
+permalink: /writings/:year/:title/
 lsi: false # produce an index for related posts
 
 # Pagination
@@ -248,9 +245,9 @@ jekyll-archives:
   posts:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
     permalinks:
-      year: "/blog/:year/"
-      tags: "/blog/:type/:name/"
-      categories: "/blog/:type/:name/"
+      year: "/writings/:year/"
+      tags: "/writings/:type/:name/"
+      categories: "/writings/:type/:name/"
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
@@ -616,21 +613,3 @@ third_party_libraries:
 # -----------------------------------------------------------------------------
 # Get external JSON data
 # -----------------------------------------------------------------------------
-
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
-
-jsonresume:
-  - basics
-  - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references
